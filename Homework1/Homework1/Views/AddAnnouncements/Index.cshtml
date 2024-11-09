@@ -1,0 +1,27 @@
+
+@model Homework1.Models.Announcement
+
+<div class="form-container">
+    <h2>Add Announcement</h2>
+    <form method="post" action="/AddAnnouncements/Index">
+        <div class="mb-3">
+            <label asp-for="Title" class="form-label">Title</label>
+            <input asp-for="Title" class="form-control" name ="Title"/>
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Text" class="form-label">Text</label>
+            <textarea asp-for="Text" class="form-control"name="Text"></textarea>
+            <span asp-validation-for="Text" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="ResponsiblePerson" class="form-label">Responsible Person</label>
+            <input asp-for="ResponsiblePerson" class="form-control" name="ResponsiblePerson" />
+            <span asp-validation-for="ResponsiblePerson" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Announcement</button>
+    </form>
+</div>
+<footer body style="background-color:beige">
+  <p body style="color: black; margin-top: auto; text-align: center;">Author: Tuna Parlak ID:B221202022</p>
+</footer>

@@ -1,0 +1,14 @@
+<h1 body style="text-align: center;">Welcome to main page.</h1>
+<p id="datetime"></p>
+
+<script>
+  var now = new Date();
+  var datetime = now.toLocaleString();
+  document.getElementById("datetime").innerHTML = datetime;
+</script>
+@Html.ActionLink("Add Announcements","Index","AddAnnouncements")<br>
+@Html.ActionLink("All Announcements","Index","Announcements")
+  
+<footer body style="background-color:beige">
+  <p body style="color: black; margin-top: auto; text-align: center;">Author: Tuna Parlak ID:B221202022</p>
+</footer>
